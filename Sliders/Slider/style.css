@@ -1,0 +1,111 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.center-div-slide {
+    width: auto;
+    background: #01030D;
+    overflow-x: hidden;
+    height: 550px;
+}
+.slide img {
+    width: -webkit-fill-available;
+    max-width: 440px;
+    height: auto;
+    margin: 30px 15px;
+  }
+  
+  .slide {
+   
+    transition:  300ms;
+    opacity: 1;
+  }
+  
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .arrow {
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow svg {
+    transition: color 300ms;
+  }
+  
+  .arrow svg:hover {
+    color: #68edff;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block !important;
+    width: 94%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    margin: 0 5px;
+    /* padding: 0; */
+    cursor: pointer;
+}
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 20px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    /* padding: 5px; */
+    cursor: pointer;
+    color: #4e619a;
+    border: 0;
+    outline: none;
+    /* background: #4e619a; */
+
+}
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 0px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    content: '';
+    text-align: center;
+    opacity: 1;
+    /* color: white; */
+    /* border: 2px solid #4e619a; */
+    background-color: #4e619a !important;
+    -webkit-font-smoothing: unset;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+    background-color: white !important;;
+}
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+  
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
+
+  @media only screen and (max-width: 425px){
+    .center-div-slide {
+        height: 200px;
+    }
+}  

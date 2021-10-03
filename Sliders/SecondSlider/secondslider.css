@@ -1,0 +1,90 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.main{
+    background: #01030D;
+}
+.inner{
+    display: flex !important;
+    width: 80%;
+    margin: auto;
+    padding: 50px 10px 20px 10px;
+    color: white;
+}
+.col1,.col2 {
+    flex-basis: 50%;
+}
+.col1 img{
+    width: 400px;
+    height: auto;
+}
+.custome-slid {
+    position: relative;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 20px 20px;
+}
+.custome-slid-active {
+    display: inline-block;
+  }
+  
+  .custome-slid-inactive {
+    display: none;
+  }
+  /* transition: all .3s ease-in-out; */
+
+.two-slid-img{
+    width: 250px !important;
+    margin: 20% auto;
+}
+.col1{
+    width: 60%;
+    margin: auto;
+}
+.slid-img{
+    /* height: 100%; */
+    max-width: 100%;
+    /* width: calc(50% - 24px); */
+    overflow: hidden;
+}
+.slid-img img {
+    transition: all .3s ease-in-out;
+    width: 90%;
+    cursor: pointer;
+}
+.slid-img img:hover {
+    transform: scale(1.02);
+}
+/* .next-prev-slid {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+} */
+.slid-line-btn{
+    width: 40px;
+    height: 12px;
+    background: #4e619a;
+    margin: 1px;
+    border: 5px solid #01030d;
+    transition: all .3s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 724px){
+	/*Small smartphones [325px -> 425px]*/
+    .inner {
+        flex-direction: column;
+    }
+    .col1 img {
+        width: 200px;
+    }
+    
+}
+@media only screen and (min-width:426) and (max-width: 800px) {
+    .inner {
+        flex-direction: column;
+    }
+    .col1 img{
+        width: 300px;
+    }
+}
