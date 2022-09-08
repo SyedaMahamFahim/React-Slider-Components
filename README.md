@@ -39,7 +39,7 @@ Copy the slider code and add in your react project
 
 
 ## Slider 2
-![App Screenshot](https://user-images.githubusercontent.com/79671325/189231446-894b204c-6c9e-4955-8ff9-ef5e606b8b6f.png)
+![App Screenshot](https://user-images.githubusercontent.com/79671325/189231739-2419f80c-9242-4609-bb5d-db0e7a605e7b.png)
 
 
 
